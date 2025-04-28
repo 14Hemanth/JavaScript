@@ -1,0 +1,15 @@
+They are only 2 types 
+
+1. Object 
+2.Primitive types
+
+Primitives type 
+  Number
+  Boolean
+  String
+  BigInt
+  Symbol
+  Null
+  Undefined - if a value is initialize but not given a value , 'empty value'
+
+typeof null is Object this is a bug but itll not be modified to keep the native module safe.
