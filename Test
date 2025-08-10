@@ -1,0 +1,291 @@
+{
+    "pyEmbedAssignmentWithStages": [
+        {
+            "name": "pyEmbedAssignmentWithStages",
+            "type": "View",
+            "config": {
+                "template": "OneColumn",
+                "ruleClass": "INGGroup-WBAL-Work-WBALRequest",
+                "localeReference": "@LR INGGROUP-WBAL-WORK-WBALREQUEST!VIEW!PYEMBEDASSIGNMENTWITHSTAGES"
+            },
+            "children": [
+                {
+                    "name": "A",
+                    "type": "Region",
+                    "children": [
+                        {
+                            "type": "reference",
+                            "config": {
+                                "type": "view",
+                                "name": "pyStages"
+                            }
+                        },
+                        {
+                            "type": "reference",
+                            "config": {
+                                "type": "view",
+                                "name": "pyCaseWorkarea"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "classID": "INGGroup-WBAL-Work-WBALRequest"
+        }
+    ],
+    "pyCaseWorkarea": [
+        {
+            "name": "pyCaseWorkarea",
+            "type": "View",
+            "config": {
+                "ruleClass": "Work-"
+            },
+            "children": [
+                {
+                    "name": "A",
+                    "type": "Region",
+                    "children": [
+                        {
+                            "type": "reference",
+                            "config": {
+                                "type": "view",
+                                "name": "pzFlowContainer"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "classID": "INGGroup-WBAL-Work-WBALRequest"
+        }
+    ],
+    "pzFlowContainer": [
+        {
+            "name": "pzFlowContainer",
+            "type": "View",
+            "config": {
+                "ruleClass": "@baseclass"
+            },
+            "children": [
+                {
+                    "type": "FlowContainer",
+                    "config": {
+                        "name": "workarea",
+                        "routingInfo": "@ROUTING_INFO"
+                    },
+                    "children": [
+                        {
+                            "type": "reference",
+                            "config": {
+                                "type": "view",
+                                "name": "@P .pyViewName",
+                                "context": "@P .pyViewContext"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "classID": "INGGroup-WBAL-Work-WBALRequest"
+        }
+    ],
+    "pyStages": [
+        {
+            "name": "pyStages",
+            "type": "View",
+            "config": {
+                "ruleClass": "Work-"
+            },
+            "children": [
+                {
+                    "config": {
+                        "currentStage": "@P .pxCurrentStage"
+                    },
+                    "type": "Stages"
+                }
+            ],
+            "classID": "INGGroup-WBAL-Work-WBALRequest"
+        }
+    ]
+}
+
+
+{
+    "Prerequisite_1": [
+        {
+            "name": "Prerequisite_1",
+            "type": "View",
+            "config": {
+                "template": "DefaultForm",
+                "ruleClass": "INGGroup-WBAL-Work-WBALRequest",
+                "localeReference": "@LR INGGROUP-WBAL-WORK-WBALREQUEST!VIEW!PREREQUISITE_1",
+                "NumCols": "1"
+            },
+            "children": [
+                {
+                    "name": "Fields",
+                    "type": "Region",
+                    "children": [
+                        {
+                            "type": "Dropdown",
+                            "config": {
+                                "label": "@L Select team",
+                                "placeholder": "@L Select...",
+                                "listType": "associated",
+                                "datasource": "@ASSOCIATED .pyPreviewPicklist",
+                                "value": "@P .pyPreviewPicklist",
+                                "helperText": "@L Team responsible for data collection and client communication",
+                                "required": true
+                            }
+                        },
+                        {
+                            "type": "Dropdown",
+                            "config": {
+                                "value": "@P .pyPreviewPicklist",
+                                "label": "@L Select user",
+                                "placeholder": "@L Select...",
+                                "listType": "associated",
+                                "datasource": "@ASSOCIATED .pyPreviewPicklist",
+                                "helperText": "@L Team member responsible for data collection and client communication.",
+                                "required": true
+                            }
+                        },
+                        {
+                            "type": "TextInput",
+                            "config": {
+                                "value": "@P .ClientReference",
+                                "label": "@L Client Reference",
+                                "required": true
+                            }
+                        },
+                        {
+                            "type": "TextInput",
+                            "config": {
+                                "value": "@P .InternalReference",
+                                "label": "@L Internal Reference",
+                                "required": false
+                            }
+                        },
+                        {
+                            "type": "Email",
+                            "config": {
+                                "value": "@P .Email",
+                                "label": "@L Email",
+                                "required": true
+                            }
+                        },
+                        {
+                            "type": "Currency",
+                            "config": {
+                                "value": "@P .Amount",
+                                "label": "@L Amount",
+                                "isoCodeSelection": "constant",
+                                "currencyISOCode": "@L EUR",
+                                "allowDecimals": true,
+                                "required": true
+                            }
+                        },
+                        {
+                            "type": "Checkbox",
+                            "config": {
+                                "caption": "@L Unable to find your Place of birth?",
+                                "value": "@P .UnableToFindYourPlaceOfBirth",
+                                "trueLabel": "@L Yes",
+                                "falseLabel": "@L No",
+                                "label": "@L Place of birth Acknowledgment",
+                                "required": true,
+                                "disabled": false
+                            }
+                        }
+                    ]
+                }
+            ],
+            "classID": "INGGroup-WBAL-Work-WBALRequest"
+        }
+    ]
+}
+
+
+
+
+<ing-pega-main>
+    <ing-pega-renderer>
+        <root-container>
+            <root-container>
+                <view-container>
+                    <reference-component>
+                        <view-component>
+                            <div class="psdk-view-top"> --> inside this the pyEmbedAssignmentWithStages
+                                <!--?lit$345390798$-->
+                                <!--?lit$345390798$-->
+                                <one-column>
+                                    <region-component>
+                                        <reference-component></reference-component>--> stages 
+                                        <reference-component>
+                                            <view-component> --> pyCaseWorkarea
+                                                <div class="psdk-view-top">
+                                                    <!--?lit$345390798$-->
+                                                    <!--?lit$345390798$--><!---->
+                                                    <region-component>
+                                                        <reference-component>
+                                                            <view-component>
+                                                                <div class="psdk-view-top">
+                                                                    <!--?lit$345390798$-->
+                                                                    <!--?lit$345390798$--><!---->
+                                                                    <flow-container>
+                                                                        <div style="text-align: left;" class="psdk-flow-container-top" id="ROOT/PRIMARY_2/WORKAREA">
+                                                                            <!--?lit$345390798$-->
+                                                                            
+                                                                              <!--?lit$345390798$-->
+                                                                                      <h2 class="headline--primary"><!--?lit$345390798$-->Prerequisite</h2>
+                                                                                      <!--?lit$345390798$-->
+                                                                                      <div>
+                                                                                        <assignment-component itemkey="root/primary_2/workarea_1">
+                                                                                            <assignment-card-component itemkey="root/primary_2/workarea_1">
+                                                                                                <form>
+                                                                                                    <div><!--?lit$345390798$--><!--?lit$345390798$--><!---->
+                                                                                                        <view-component>
+                                                                                                            <div><!--?lit$345390798$--><!--?lit$345390798$--><!---->
+                                                                                                                <view-component>
+                                                                                                                    <div class="psdk-view-top">
+                                                                                                                        <!--?lit$345390798$-->
+                                                                                                                        <!--?lit$345390798$-->
+                                                                                                                        <default-form-component>
+                                                                                                                            <div class="psdk-default-form-one-column"><!--?lit$345390798$--><!---->
+                                                                                                                                <dropdown-form></dropdown-form><!----><!---->
+                                                                                                                                <dropdown-form></dropdown-form><!----><!---->
+                                                                                                                                <text-input-form></text-input-form><!----><!---->
+                                                                                                                                <text-input-form></text-input-form><!----><!---->
+                                                                                                                                <email-form></email-form><!----><!---->
+                                                                                                                                <currency-form></currency-form><!----><!---->
+                                                                                                                                <check-box-form></check-box-form><!---->
+                                                                                                                            </div>
+                                                                                                                        </default-form-component>
+                                                                                                                      </div>
+                                                                                                                </view-component><!----><!--?-->
+                                                                                                            </div>
+                                                                                                        </view-component><!----><!--?-->
+                                                                                                    </div>
+                                                                                                  </form>
+                                                                                            </assignment-card-component>
+                                                                                        </assignment-component>
+                                                                                      </div>
+                                                                                    
+                                                                                <div></div>
+                                                                        </div>
+                                                                    </flow-container><!---->
+                                                                  </div>
+                                                            </view-component>
+                                                        </reference-component>
+                                                    </region-component><!---->
+                                                  </div>
+                                            </view-component>
+                                        </reference-component>
+                                    </region-component>
+                                </one-column>
+                              </div>
+                        </view-component>
+                    </reference-component>
+                </view-container>
+            </root-container>
+        </root-container>
+    </ing-pega-renderer>
+</ing-pega-main>
