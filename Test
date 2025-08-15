@@ -289,3 +289,72 @@
         </root-container>
     </ing-pega-renderer>
 </ing-pega-main>
+
+
+
+ing-pega-main (authentication)
+└── ing-pega-renderer
+    └── root-container
+        ├── preview-view-container
+        ├── modal-view-container-component
+        ├── view-container
+        │   └── reference-component
+        │       └── view-component
+        │           └── one-column
+        │               └── region-component
+        │                   ├── reference-component (stages-component)
+        │                   │   └── view-component
+        │                   │       └── div
+        │                   │           └── stages-component
+        │                   └── reference-component (flow-container)
+        │                       └── view-component
+        │                           └── region-component
+        │                               └── reference-component
+        │                                   └── view-component
+        │                                       └── flow-container
+        │                                           └── assignment-component
+        │                                               └── assignment-card-component
+        │                                                   └── form
+        │                                                       └── view-component
+        │                                                           └── default-form-component
+        │                                                               ├── dropdown-form (x2)
+        │                                                               │   └── ing-select
+        │                                                               │       ├── slot elements
+        │                                                               │       ├── ing-icon
+        │                                                               │       │   └── svg → path
+        │                                                               │       ├── select → options
+        │                                                               │       ├── label
+        │                                                               │       └── ing-validation-feedback
+        │                                                               ├── text-input-form (x2)
+        │                                                               │   └── ing-input
+        │                                                               │       ├── slot elements
+        │                                                               │       ├── input
+        │                                                               │       ├── span
+        │                                                               │       └── ing-validation-feedback
+        │                                                               ├── email-form
+        │                                                               │   └── ing-input-email
+        │                                                               │       ├── slot elements
+        │                                                               │       ├── input
+        │                                                               │       ├── span
+        │                                                               │       └── ing-validation-feedback
+        │                                                               ├── currency-form
+        │                                                               │   └── ing-input-amount
+        │                                                               │       ├── slot elements
+        │                                                               │       └── small → slot
+        │                                                               ├── check-box-form
+        │                                                               │   └── ing-checkbox-group
+        │                                                               │       ├── ing-checkbox
+        │                                                               │       │   ├── svg → path
+        │                                                               │       │   ├── slot
+        │                                                               │       │   └── small → slot
+        │                                                               │       ├── label
+        │                                                               │       ├── lion-validation-feedback
+        │                                                               │       └── input
+        │                                                               └── action-buttons-component
+        │                                                                   ├── ing-button (Submit)
+        │                                                                   │   ├── slot
+        │                                                                   │   └── div → slot
+        │                                                                   └── ing-button (Cancel)
+        │                                                                       ├── slot
+        │                                                                       └── div → slot
+        └── reauthentication-modal-component
