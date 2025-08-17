@@ -27,3 +27,15 @@
         </reference-component><!---->
     </div>
 </default-form-component>
+default-form-component (Case Form)
+└── reference-component.grid-column
+    └── view-component
+        └── default-form-component
+            ├── text-input-form (Text Field)
+            └── reference-component.grid-column
+                └── view-component
+                    └── default-form-component
+                        ├── text-input-form (Text Field)
+                        ├── reference-component.grid-column
+                        │     └── one again
+                        └── text-input-form (Text Field)
