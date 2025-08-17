@@ -22,3 +22,18 @@
         </root-container>
     </ing-pega-renderer>
 </ing-pega-main>
+
+
+
+ing-pega-main
+ └── ing-pega-renderer
+      └── root-container
+           ├── preview-view-container
+           ├── modal-view-container-component
+           └── view-container
+                └── reference-component
+                     └── view-component
+                          └── one-column
+                               └── region-component
+                                    ├── reference-component
+                                    └── reference-component
