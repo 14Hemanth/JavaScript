@@ -1,0 +1,18 @@
+<default-form-component>
+  <div class="psdk-default-form-one-column">
+    <reference-component class="grid-column"> --> View 1
+      <view-component>
+        <div class="psdk-view-top">
+          <default-form-component>
+            <div class="psdk-default-form-one-column">
+              <text-input-form> </text-input-form><!---->
+            </div>
+          </default-form-component>
+        </div>
+      </view-component>
+    </reference-component>
+    
+    <reference-component class="grid-column"></reference-component> --> View 2
+    <reference-component class="grid-column"></reference-component> --> view 3
+  </div>
+</default-form-component>
