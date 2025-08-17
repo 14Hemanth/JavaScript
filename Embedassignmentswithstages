@@ -37,3 +37,60 @@ ing-pega-main
                                └── region-component
                                     ├── reference-component
                                     └── reference-component
+<ing-pega-main>
+    <ing-pega-renderer>
+        <root-container>
+            <preview-view-container></preview-view-container>
+            <modal-view-container-component title=""></modal-view-container-component>
+            <view-container>
+                <reference-component>
+                    <view-component>
+                        <div class="psdk-view-top">
+                            <!--?lit$626816019$-->
+                            <!--?lit$626816019$-->
+                            <one-column>
+                                <region-component>
+                                    <reference-component></reference-component>
+                                    <reference-component>
+                                        <view-component>
+                                            <div class="psdk-view-top">
+                                            <!--?lit$626816019$-->
+                                            <!--?lit$626816019$--><!---->
+                                                <region-component>
+                                                    <reference-component>
+                                                        <view-component>
+                                                            <div class="psdk-view-top">
+                                                                <flow-container>
+                                                                    <div style="text-align: left;" class="psdk-flow-container-top" id="ROOT/PRIMARY_2/WORKAREA">
+     
+                                                                        <h2 class="headline--primary"><!--?lit$626816019$-->Prerequisite</h2>
+               
+                                                                        <div>
+                                                                            <assignment-component itemkey="root/primary_2/workarea_1">
+                                                                                <div id="Assignment">
+                                                                                    <assignment-card-component itemkey="root/primary_2/workarea_1">
+                                                                                        
+                                                                                    </assignment-card-component>
+                                                                                </div>
+                                                                            </assignment-component>
+                                                                        </div>
+              
+      
+                                                                    </div>
+                                                                </flow-container><!---->
+                                                            </div>
+                                                        </view-component>
+                                                    </reference-component>
+                                                </region-component><!---->
+                                            </div>
+                                        </view-component>
+                                    </reference-component>
+                                </region-component>
+                            </one-column>
+                          </div>
+                    </view-component>
+                </reference-component>
+            </view-container>
+        </root-container>
+    </ing-pega-renderer>
+</ing-pega-main>
