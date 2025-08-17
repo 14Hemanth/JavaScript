@@ -85,6 +85,8 @@ ing-pega-main
                                             </div>
                                         </view-component>
                                     </reference-component>
+
+
                                 </region-component>
                             </one-column>
                           </div>
@@ -94,3 +96,24 @@ ing-pega-main
         </root-container>
     </ing-pega-renderer>
 </ing-pega-main>
+
+
+
+
+ing-pega-main  (Authentication Entry)
+ └── ing-pega-renderer  (UI Renderer)
+      └── root-container  (Root Layout)
+           ├── preview-view-container  (Preview Area)
+           ├── modal-view-container-component  (Modal Area)
+           └── view-container  (Main View Container)
+                └── reference-component → view-component
+                     └── one-column  (One Column Layout)
+                          └── region-component
+                               ├── reference-component
+                               └── reference-component → view-component
+                                    └── region-component
+                                         └── reference-component → view-component
+                                              └── flow-container (Flow Execution)
+                                                   └── assignment-component (Assignment Handler)
+                                                        └── assignment-card-component (Assignment Card)
+
