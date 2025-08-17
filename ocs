@@ -1,4 +1,4 @@
-<default-form-component>
+8<default-form-component>
     <div class="psdk-default-form-one-column">
         <reference-component class="grid-column">
             <view-component>
@@ -36,3 +36,21 @@
     </div>
 
 </default-form-component>
+
+default-form-component (Case Form)
+└── reference-component.grid-column → View 1
+    └── view-component
+        ├── template-title-container
+        └── details-component
+            └── details-fields-extension
+                └── 3 × div
+
+└── reference-component.grid-column → View 2
+    └── view-component
+        ├── template-title-container
+        └── details-component
+            └── details-fields-extension
+                └── 3 × div
+
+└── reference-component.grid-column → View 3 (empty placeholder)
+
