@@ -1,0 +1,29 @@
+<default-form-component>
+    <div class="psdk-default-form-one-column">
+        <reference-component class="grid-column">
+            <view-component>
+                <div class="psdk-view-top">
+                    <default-form-component>
+                        <div class="psdk-default-form-one-column"><!--?lit$626816019$--><!---->
+                            <text-input-form></text-input-form>
+
+                            <reference-component class="grid-column">
+                                <view-component>
+                                    <div class="psdk-view-top">
+                                        <default-form-component>
+                                            <text-input-form></text-input-form>
+                                            <reference-component class="grid-column">
+                                                one again
+                                            </reference-component>
+                                        </default-form-component>
+                                    <div class="psdk-default-form-one-column"><!--?lit$626816019$--><!---->
+                                    <text-input-form></text-input-form>
+                                </view-component>
+                            </reference-component><!---->
+                        </div>
+                    </default-form-component>
+                </div>
+            </view-component>
+        </reference-component><!---->
+    </div>
+</default-form-component>
