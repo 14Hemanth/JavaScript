@@ -1,0 +1,38 @@
+<default-form-component>
+    <div class="psdk-default-form-one-column">
+        <reference-component class="grid-column">
+            <view-component>
+                <div class="psdk-view-top">
+                    <div class="template-title-container"></div>
+                    <details-component>
+                        <details-fields-extension>
+                                3*div
+                        </details-fields-extension>
+                    </details-component>
+                </div>
+            </view-component>
+        </reference-component>
+
+
+
+        <reference-component class="grid-column">
+            <view-component>
+                <div class="psdk-view-top">
+                    <div class="template-title-container"></div>
+                    <details-component>
+                        <details-fields-extension>
+                                3*div
+                        </details-fields-extension>
+                    </details-component>
+                </div>
+            </view-component>
+
+        </reference-component>
+
+
+
+        <reference-component class="grid-column">
+        </reference-component>
+    </div>
+
+</default-form-component>
