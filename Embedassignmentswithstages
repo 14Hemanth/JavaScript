@@ -1,0 +1,24 @@
+<ing-pega-main>
+    <ing-pega-renderer>
+        <root-container>
+            <preview-view-container></preview-view-container>
+            <modal-view-container-component title=""></modal-view-container-component>
+            <view-container>
+                <reference-component>
+                    <view-component>
+                        <div class="psdk-view-top">
+                            <!--?lit$626816019$-->
+                            <!--?lit$626816019$-->
+                            <one-column>
+                                <region-component>
+                                    <reference-component></reference-component>
+                                    <reference-component></reference-component>
+                                </region-component>
+                            </one-column>
+                          </div>
+                    </view-component>
+                </reference-component>
+            </view-container>
+        </root-container>
+    </ing-pega-renderer>
+</ing-pega-main>
