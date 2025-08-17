@@ -16,3 +16,18 @@
     <reference-component class="grid-column"></reference-component> --> view 3
   </div>
 </default-form-component>
+
+
+
+
+default-form-component  (Case Form)
+ └── div.psdk-default-form-one-column
+      ├── reference-component.grid-column  → View 1
+      │     └── view-component
+      │          └── default-form-component
+      │               └── div.psdk-default-form-one-column
+      │                    └── text-input-form  (Text Field)
+      │
+      ├── reference-component.grid-column  → View 2 (empty placeholder)
+      │
+      └── reference-component.grid-column  → View 3 (empty placeholder)
