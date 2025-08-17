@@ -109,3 +109,43 @@ default-form-component (Case Form)
         <reference-component class="grid-column"></reference-component>
     </div>
 </default-form-component>
+
+
+default-form-component (Case Form)
+└── div.psdk-default-form-one-column
+    ├── reference-component.grid-column → View 1
+    │   └── view-component
+    │       └── div.psdk-view-top
+    │           ├── template-title-container
+    │           └── details-two-column-component
+    │               └── div.psdk-grid-filter
+    │                   ├── div
+    │                   │   └── details-fields-extension
+    │                   │       ├── div
+    │                   │       ├── div
+    │                   │       └── div
+    │                   └── div
+    │                       └── details-fields-extension
+    │                           ├── div
+    │                           ├── div
+    │                           └── div
+    │
+    ├── reference-component.grid-column → View 2
+    │   └── view-component
+    │       └── div.psdk-view-top
+    │           ├── template-title-container
+    │           └── details-two-column-component
+    │               └── div.psdk-grid-filter
+    │                   ├── div
+    │                   │   └── details-fields-extension
+    │                   │       ├── div
+    │                   │       ├── div
+    │                   │       └── div
+    │                   └── div
+    │                       └── details-fields-extension
+    │                           ├── div
+    │                           ├── div
+    │                           └── div
+    │
+    └── reference-component.grid-column → View 3 (empty placeholder)
+
