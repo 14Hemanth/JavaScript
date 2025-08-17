@@ -54,3 +54,58 @@ default-form-component (Case Form)
 
 └── reference-component.grid-column → View 3 (empty placeholder)
 
+<default-form-component>
+    <div class="psdk-default-form-one-column">
+        <reference-component class="grid-column">
+            <view-component>
+                <div class="psdk-view-top">
+                    <div class="template-title-container"></div>
+                    <details-two-column-component>
+                        <div class="psdk-grid-filter">
+                            <div>
+                                <details-fields-extension>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                </details-fields-extension>
+                            </div>
+                            <div>
+                                <details-fields-extension>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                </details-fields-extension>
+                            </div>
+                        </div>
+                    </details-two-column-component>
+                </div>
+            </view-component>
+        </reference-component>
+        <reference-component class="grid-column">
+            <view-component>
+                <div class="psdk-view-top">
+                    <div class="template-title-container"></div>
+                    <details-two-column-component>
+                        <div class="psdk-grid-filter">
+                            <div>
+                                <details-fields-extension>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                </details-fields-extension>
+                            </div>
+                            <div>
+                                <details-fields-extension>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                </details-fields-extension>
+                            </div>
+                        </div>
+                    </details-two-column-component>
+                </div>
+            </view-component>
+        </reference-component>
+        <reference-component class="grid-column"></reference-component>
+    </div>
+</default-form-component>
