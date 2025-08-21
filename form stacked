@@ -31,3 +31,124 @@ default-form-component  (Case Form)
       ├── reference-component.grid-column  → View 2 (empty placeholder)
       │
       └── reference-component.grid-column  → View 3 (empty placeholder)
+
+
+
+
+form two coloum layout
+
+<default-form-component>
+
+    <div class="psdk-default-form-two-column">
+        <!--?lit$146652234$--><!---->
+        <text-input-form></text-input-form>
+        <text-input-form></text-input-form>
+        <text-input-form></text-input-form>
+        <text-input-form></text-input-form>
+        <currency-form></currency-form>
+        <dropdown-form></dropdown-form>
+    </div>
+</default-form-component>
+
+details two column
+
+<default-form-component>
+    <reference-component class="grid-column">
+        <view-component>
+
+            <details-two-column-component>
+
+                
+                    <div>
+                        <details-fields-extension>
+
+
+                                <dl class="psdk-details-fields-primary" id="details-fields-list">
+                                        <!--?lit$738835935$--><!---->
+                                    <div class="psdk-grid-filter">
+                                        <dt class="paragraph"><!--?lit$738835935$-->Actionable button</dt>
+                                        <dd class="psdk-csf-primary-field-value">
+                                        <!--?lit$738835935$--><span class="ing-pega-display-text">
+                                    &gt;<!--?lit$738835935$-->Lorem ipsum</span>
+                                        </dd>
+                                    </div>
+                                    <!----><!---->
+                                    <div class="psdk-grid-filter">
+                                        <dt class="paragraph"><!--?lit$738835935$-->Country</dt>
+                                        <dd class="psdk-csf-primary-field-value">
+                                        <!--?lit$738835935$--><span class="psdk-details-text-style">---</span>
+                                        </dd>
+                                    </div>
+                                    <!----><!---->
+                                    <div class="psdk-grid-filter">
+                                        <dt class="paragraph"><!--?lit$738835935$-->Amount</dt>
+                                        <dd class="psdk-csf-primary-field-value">
+                                        <!--?lit$738835935$-->
+                                    <span class="ing-pega-display-text"><!--?lit$738835935$-->USD 12,345.00</span>
+                                    
+                                        </dd>
+                                    </div>
+                                    <!----><!---->
+                                    <div class="psdk-grid-filter">
+                                        <dt class="paragraph"><!--?lit$738835935$-->Add document</dt>
+                                        <dd class="psdk-csf-primary-field-value">
+                                        <!--?lit$738835935$--><span class="ing-pega-display-text">
+                                    &gt;<!--?lit$738835935$-->Lorem ipsum</span>
+                                        </dd>
+                                    </div>
+                                    <!---->
+                            </dl>
+
+                        </details-fields-extension>
+                    </div>
+
+                    <div>
+                        <details-fields-extension>
+                        <dl class="psdk-details-fields-primary" id="details-fields-list">
+            <!--?lit$738835935$--><!---->
+                                <div class="psdk-grid-filter">
+                                    <dt class="paragraph"><!--?lit$738835935$-->Case ID</dt>
+                                    <dd class="psdk-csf-primary-field-value">
+                                    <!--?lit$738835935$--><span class="ing-pega-display-text">
+                                &gt;<!--?lit$738835935$-->REQ-7460</span>
+                                    </dd>
+                                </div>
+                                <!----><!---->
+                                <div class="psdk-grid-filter">
+                                    <dt class="paragraph"><!--?lit$738835935$-->Commit DateTime</dt>
+                                    <dd class="psdk-csf-primary-field-value">
+                                    <!--?lit$738835935$--><span class="ing-pega-display-text"><!--?lit$738835935$-->2025-08-21T09:11:40.966Z</span>
+                                    </dd>
+                                </div>
+                                <!----><!---->
+                                <div class="psdk-grid-filter">
+                                    <dt class="paragraph"><!--?lit$738835935$-->Create date/time</dt>
+                                    <dd class="psdk-csf-primary-field-value">
+                                    <!--?lit$738835935$--><span class="ing-pega-display-text"><!--?lit$738835935$-->2025-08-21T09:10:54.633Z</span>
+                                    </dd>
+                                </div>
+        <!---->
+                        </dl>
+                        </details-fields-extension>
+                    </div>
+                
+            </details-two-column-component>
+        </view-component>
+    </reference-component>
+</default-form-component>
+
+
+
+
+one coloum form
+
+<default-form-component>
+
+        <text-input-form></text-input-form>
+
+        <text-input-form></text-input-form>
+
+        <currency-form></currency-form>
+
+        
+</default-form-component>
